@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot 2.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header" id="chatHeader">
+            <h2>Chatbot 2.0</h2>
+            <div id="userLabel" class="user-label"></div>
+        </div>
+        <div class="chat-logo-container">
+			<p class="chat-logo-text">ChatBot Realizzato da MrD0B</p>
+            <img src="https://cheshirecat.ai/wp-content/uploads/2023/12/CheshireCat-4096x1024_powered_by_black-2048x512.png" class="chat-logo" alt="CheshireCat Logo">
+        </div>
+        <div id="userInputContainer" class="user-input-container">
+            <input type="text" id="usernameInput" placeholder="Enter your username">
+            <button onclick="connectWebSocket()">Connect</button>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input" id="chatInput">
+            <input type="text" id="messageInput" placeholder="Type a message">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
